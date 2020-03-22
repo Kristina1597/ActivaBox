@@ -29,8 +29,9 @@ p {
  */
 .container {
     width: 100%;
-    max-width: 1170px;
+    max-width: 1200px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 
 /*Header
@@ -145,18 +146,22 @@ header {
     border: 0;
     cursor: pointer;
     transition: background .1s linear;
+    text-align: center;
 }
 
 .btn--red {
     background-color: #e84545;
     padding: 14px 40px;
 }
+
 .btn--red:hover {
     background-color: #dd3434;
 
 }
 
-
+.btn--long {
+    min-width: 280px;
+}
 /*Features
 =================
  */
@@ -254,4 +259,250 @@ header {
     font-size: 14px;
     color: white;
 
+}
+
+
+/*Team
+=================
+ */
+
+.team {
+    margin: 100px 0 70px;
+
+}
+
+.team__inner {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+.team__item {
+    width: 25%;
+    padding: 0 15px;
+    margin-bottom: 30px;
+}
+
+.team__photo {
+    display: block;
+    max-width: 100%;
+
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.team__name {
+    font-size: 22px;
+    color: #2d3033;
+    margin-bottom: 8px;
+}
+
+.team__prof {
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #e84545;
+    margin-bottom: 15px;
+
+}
+
+.team__text {
+    font-size: 14px;
+    color: #6c7279;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+/*Social
+=================
+ */
+
+.social {
+    display: flex;
+
+}
+
+.social__link {
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    border: 1px solid #e8ecee;
+    display: flex;
+    justify-content: center;
+    margin-right: 4px;
+    background-color: #ffffff;
+    transition: background .1s linear;
+}
+
+.social__link:hover {
+    background-color: #e8ecee;
+}
+
+.social__link:hover .social__icon {
+    fill: #2d3033;
+}
+
+.social__icon {
+    fill: #c6cacc;
+    display: block;
+    height: 18px;
+    transition: fill .1s linear;
+}
+
+.social--footer {
+    justify-content: center;
+
+}
+
+.social--footer .social__link {
+    background-color: transparent;
+    border-width: 2px;
+    border-color: #ffffff;
+    border-radius: 2px;
+}
+
+.social--footer .social__link:hover {
+    background-color: #ffffff;
+}
+
+.social--footer .social__icon {
+    fill: #ffffff;
+}
+/*Reviews
+=================
+ */
+
+.reviews {
+    background-color: #53354a;
+    overflow: hidden;
+}
+
+.reviews__item {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.reviews__photo {
+    width: 50%;
+    height: 500px;
+    position: relative;
+}
+
+.reviews__content {
+    width: 50%;
+    padding-left: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.reviews__text {
+    font-family: 'Cardo', sans-serif;
+    font-size: 36px;
+    font-style: italic;
+    line-height: 1.2;
+    color: #ffffff;
+    margin-bottom: 25px;
+}
+
+.reviews__image {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    z-index: 1;
+
+    transform: translateY(-50%);
+}
+
+.reviews__author {
+    font-size: 13px;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+/*download
+=================
+ */
+
+.download {
+    margin: 90px;
+    text-align: center;
+}
+
+.download__title {
+    font-size: 28px;
+    color: #2d3033;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.download__text {
+    font-size: 13px;
+    color: #2d3033;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+/*Footer
+=================
+ */
+
+.footer {
+    background-color: #3a3e64;
+}
+
+.footer__inner {
+    padding: 70px 0;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer__block {
+    width: 33.33333%;
+    text-align: center;
+    padding: 0 15px;
+}
+
+.footer__title {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.footer__address {
+    color: rgba(255, 255, 255, 0.5);
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.footer__text {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/*Copyright
+=================
+ */
+
+.copyright {
+    background-color: #313454;
+    padding: 20px 0;
+}
+
+.copyright__text {
+    text-align: center;
+    font-size: 14px;
+    color: #808080;
+    line-height: 1.5;
+}
+
+.copyright__text span {
+    color: #ffffff;
 }
