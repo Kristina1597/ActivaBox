@@ -1,4 +1,4 @@
-html {
+    html {
     width: 100%;
     max-width: 100%;
     overflow-x: hidden;
@@ -70,6 +70,7 @@ header {
     top: 0;
     left: 0;
     z-index: 1000;
+    align-items: center;
 }
 
 .header__inner {
@@ -191,18 +192,17 @@ header {
 .features {
     display: flex;
     flex-wrap: wrap;
-    margin: 95px 0;
+    margin: 40px 0;
 }
 
 .features__item {
     width: 33.333%;
     text-align: center;
-    padding: 0 20px;
-    margin: 25px 0;
+
 }
 
 .features__icon {
-    margin-bottom: 40px;
+
 }
 
 .features__title {
@@ -210,7 +210,7 @@ header {
     color: #2d3033;
     font-weight: 700;
     text-transform: uppercase;
-    margin-bottom: 25px;
+
 }
 
 .features__text {
